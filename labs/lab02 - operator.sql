@@ -79,6 +79,9 @@ WHERE customer_name like '%마트';
 SELECT * FROM suppliers
 WHERE supplier_name like '____';
 
+SELECT * FROM suppliers
+WHERE char_length(supplier_name) = 4;
+
 
 -- 주문(orders) 테이블에서 배송업체 id(shipper_id)가 NULL인 주문을 조회하세요.
 SELECT * FROM orders
